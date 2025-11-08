@@ -1,0 +1,52 @@
+
+configs:
+
+  redis_conf:
+    file: conf/redis.conf
+
+services:
+
+  # Used to test the local Kafka Connector/sinks into MongoDB or direct insert into MongoDB Collection.
+  # MongoDB Direct
+  mongodb:
+    image: mongodb/mongodb-atlas-local:latest
+    hostname: mongodb
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_USERNAME: ${MONGO_USERNAME}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+    volumes:
+      - ./data/mongodb:/data/db
+
+  # Redis Direct
+  redis:
+    image: redis:8.0-bookworm
+    container_name: redis
+    hostname: redis
+    restart: always
+    ports:
+      - ${REDIS_PORT}:6379
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - REDIS_DB=${REDIS_DB}
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s # Optional: delay before first health check
+    volumes:
+      - ./data/redis:/data
+    configs:
+      - source: redis_conf
+        target: /usr/local/etc/redis/redis.conf
+    command: redis-server /usr/local/etc/redis/redis.conf
+
+# Without a network explicitly defined, you hit this Hive/Thrift error
+# java.net.URISyntaxException Illegal character in hostname
+# https://github.com/TrivadisPF/platys-modern-data-platform/issues/231
+networks:
+  default:
+    name: ${COMPOSE_PROJECT_NAME}

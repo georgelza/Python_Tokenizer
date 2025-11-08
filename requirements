@@ -1,0 +1,6 @@
+pymongo 
+PyPDF2 
+sentence-transformers 
+numpy 
+python-docx 
+redis

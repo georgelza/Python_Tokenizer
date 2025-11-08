@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#1 
+export MONGO_PASSWORD=
+
+#3
+export REDIS_PASSWORD=
+export REDIS_SSL_CERT=
+export REDIS_SSL_KEY=
+export REDIS_SSL_CA=
+
