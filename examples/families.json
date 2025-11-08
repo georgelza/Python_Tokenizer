@@ -1,0 +1,69 @@
+{
+  "_id": "e2078f28-616b-4b2b-acda-7db88e47308f",
+  "wife": {
+    "name": "Tia",
+    "surname": "O'Grady",
+    "nationalid": "2233457P",
+    "gender": "F",
+    "dob": "98/05/14",
+    "marital_status": "Divorced",
+    "partner": "8457183G",
+    "status": "Living",
+    "account": [
+      {
+        "fspiAgentAccountId": "IPBSIE2D-57229086",
+        "accountId": "57229086",
+        "fspiId": "IPBSIE2D",
+        "fspiAgentId": "IPBSIE2D",
+        "accountType": "Current Accounts",
+        "memberName": "Permanent TSB"
+      },
+      {
+        "fspiAgentAccountId": "AIBKGB2-67660831",
+        "accountId": "67660831",
+        "fspiId": "AIBKGB2",
+        "fspiAgentId": "AIBKGB2",
+        "accountType": "Business Accounts",
+        "memberName": "Allied Irish Banks plc"
+      },
+      {
+        "fspiAgentAccountId": "IPBSIE2D-71116346",
+        "accountId": "71116346",
+        "fspiId": "IPBSIE2D",
+        "fspiAgentId": "IPBSIE2D",
+        "accountType": "Current Accounts",
+        "memberName": "Permanent TSB"
+      },
+      {
+        "cardHolder": "T O'Grady",
+        "cardNumber": "4791054160878528",
+        "expDate": "09/25",
+        "cardNetwork": "Visa",
+        "issuingBank": "Permanent TSB"
+      }
+    ]
+  },
+  "address": {
+    "street_1": "96 Mulloughney Street Street",
+    "street_2": "",
+    "neighbourhood": "Douglas",
+    "town": "Cork City",
+    "county": "Cork",
+    "province": "Munster",
+    "country": "Ireland",
+    "country_code": "IE",
+    "postal_code": "T12 V2N4",
+    "parcel_id": "T12 V2N4-89207"
+  },
+  "children": [
+    {
+      "name": "Geraldine",
+      "surname": "Conmee",
+      "gender": "Female",
+      "dob": "17/03/21",
+      "uniqueId": "6148003J",
+      "father_nationalid": "8457183G",
+      "mother_nationalid": "2233457P"
+    }
+  ]
+}

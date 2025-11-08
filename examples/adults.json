@@ -1,0 +1,64 @@
+{
+  "_id": "152b85fb-a83b-4d6b-8006-76cbd94850e1",
+  "name": "Fergal",
+  "surname": "Freeley",
+  "nationalid": "2023852B",
+  "gender": "M",
+  "dob": "05/10/16",
+  "marital_status": "Married",
+  "partner": "7733541K",
+  "status": "Living",
+  "account": [
+    {
+      "fspiAgentAccountId": "BARCIE2D-32370059",
+      "accountId": "32370059",
+      "fspiId": "BARCIE2D",
+      "fspiAgentId": "BARCIE2D",
+      "accountType": "Current Accounts",
+      "memberName": "Barclays Bank Ireland plc"
+    },
+    {
+      "fspiAgentAccountId": "BOFIIE2D-68831794",
+      "accountId": "68831794",
+      "fspiId": "BOFIIE2D",
+      "fspiAgentId": "BOFIIE2D",
+      "accountType": "Savings/Deposit",
+      "memberName": "Bank of Ireland plc"
+    },
+    {
+      "fspiAgentAccountId": "BARCIE2D-71834892",
+      "accountId": "71834892",
+      "fspiId": "BARCIE2D",
+      "fspiAgentId": "BARCIE2D",
+      "accountType": "Savings/Deposit",
+      "memberName": "Barclays Bank Ireland plc"
+    },
+    {
+      "fspiAgentAccountId": "AIBKGB2-31430193",
+      "accountId": "31430193",
+      "fspiId": "AIBKGB2",
+      "fspiAgentId": "AIBKGB2",
+      "accountType": "Savings/Deposit",
+      "memberName": "Allied Irish Banks plc"
+    },
+    {
+      "cardHolder": "F Freeley",
+      "cardNumber": "4420159224478543",
+      "expDate": "10/25",
+      "cardNetwork": "Visa",
+      "issuingBank": "Allied Irish Banks plc"
+    }
+  ],
+  "address": {
+    "street_1": "90 Gilgunn Street Street",
+    "street_2": "",
+    "neighbourhood": "Carrick Road",
+    "town": "Boyle",
+    "county": "Roscommon",
+    "province": "Connacht",
+    "country": "Ireland",
+    "country_code": "IE",
+    "postal_code": "F52 T3N8",
+    "parcel_id": "F52 T3N8-16688"
+  }
+}
